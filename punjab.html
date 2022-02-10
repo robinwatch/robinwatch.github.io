@@ -5,6 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    		<link rel="stylesheet"
+			href=
+"https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity=
+"sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous" />
     
 <style>
 * {
@@ -168,43 +175,6 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
-}
-    
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-    body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
 
 .center {
   margin: auto;
@@ -325,7 +295,27 @@ display: block;
   margin-bottom: 20px;
 }
 }
-    ul {
+
+.centeer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+    
+}
+.button {
+  border: none;
+  color: white;
+  padding: 7px 19px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+    background-color:#787878;
+  cursor: pointer;
+}
+      ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -352,6 +342,9 @@ li a:hover, .dropdown:hover .dropbtn {
 li.dropdown {
   display: inline-block;
 }
+    li.dropdown-content{
+        text-align: center;
+    }
 
 .dropdown-content {
   display: none;
@@ -375,6 +368,11 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+    
+.my-menu {
+/*Sets all the content of dropdown div to center*/
+				text-align: center;
+			}
 </style>
 </head>
 <body>
@@ -388,17 +386,53 @@ li.dropdown {
     <a href=""></a>
     <a href=""></a>
   </div>
-    <div class="navbar"></div>
-    <ul>
-  <li><a href="index.html">States</a></li>
-
-</ul>
-
+    
+     <div class="dropdown my-menu">
+         <a href="trytab2.html"><button class="button"
+					type="button">Back
+			</button></a>
+			
+         <button class="btn btn-secondary
+						dropdown-toggle"
+					type="button"
+					id="dropdownMenuButton"
+					data-toggle="dropdown"
+					aria-haspopup="true"
+					aria-expanded="false">States
+			</button>
+			<div class="dropdown-menu"
+				aria-labelledby="dropdownMenuButton">
+				<a class="dropdown-item"
+				href="uttarakhand.html">Uttar Pradesh</a>
+				<a class="dropdown-item"
+				href="new%20delhi.html">New Delhi</a>
+                
+			</div>
+		</div>
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+				integrity=
+"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+				crossorigin="anonymous">
+	</script>
+		<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+				integrity=
+"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+				crossorigin="anonymous">
+	</script>
+		<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+				integrity=
+"sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+				crossorigin="anonymous">
+	</script>
 
 <div class="center">
     
 <div class='tableauPlaceholder' id='viz1644325254673' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Punjab_16441596784950&#47;Dashboard12' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1644325254673');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='777px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
     </div>
+     
+
 <div class="footer">
   <h2></h2>
 </div>
@@ -411,3 +445,4 @@ li.dropdown {
 
 </body>
 </html>
+
